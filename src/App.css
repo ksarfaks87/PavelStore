@@ -49,6 +49,42 @@ h1 {
 	height: 40vmin;
 	pointer-events: none;
 }
+.burger {
+	position: relative;
+	display: flex;
+	width: 30px;
+	height: 30px;
+}
+.burger img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s ease;
+}
+.burger-menu {
+	position: absolute;
+	/* display: none; */
+	right: 0;
+	color: black;
+	padding: 20px;
+	background: antiquewhite;
+	border-radius: 5px;
+	width: 240px;
+	top: 36px;
+}
+
+.menu-info {
+	display: none;
+}
+
+@media (min-width: 576px) {
+	.burger {
+		display: none;
+	}
+	.menu-info {
+		display: block;
+	}
+}
 
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
